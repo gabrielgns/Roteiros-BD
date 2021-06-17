@@ -1,0 +1,8 @@
+ssh -o ServerAliveInterval=30 gabrielns@150.165.15.11 -p 45600
+psql -d gabrielns_db
+
+CREATE SCHEMA company;
+\dn
+SHOW search_path
+SET search_path TO company,public;
+SHOW search_path;
